@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Store Clone</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Play Store Clone</h1>
+        <div id="app-list"></div>
+        <button onclick="showAddAppForm()">Add New App (Fee: $5)</button>
+        <div id="add-app-form" style="display: none;">
+            <h2>Add New App</h2>
+            <input type="text" id="app-name" placeholder="App Name">
+            <input type="text" id="app-description" placeholder="App Description">
+            <input type="text" id="app-image" placeholder="Image URL">
+            <button onclick="processPayment()">Pay and Submit</button>
+            <button onclick="hideAddAppForm()">Cancel</button>
+        </div>
+        <div id="edit-app-form" style="display: none;">
+            <h2>Edit App</h2>
+            <input type="text" id="edit-app-name" placeholder="App Name">
+            <input type="text" id="edit-app-description" placeholder="App Description">
+            <input type="text" id="edit-app-image" placeholder="Image URL">
+            <button onclick="updateApp()">Update</button>
+            <button onclick="hideEditAppForm()">Cancel</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
